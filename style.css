@@ -1,0 +1,162 @@
+/*reset styling*/ 
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, em, img, i, center, ol, ul, li, fieldset, form, label, figure, figcaption, footer, header, nav, section, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    line-height: 1;
+    word-wrap: break-word;
+    font-size: 100%;
+    overflow: hidden;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  figcaption {
+    font-style: italic;
+  }
+  
+  button {
+    outline: 0;
+    color: inherit;
+  }
+  
+  q {
+    display: inline;
+    font-style: italic;
+  }
+  
+  textarea, input[type=text], input[type=button], input[type=submit], input[type=reset], input[type=search], input[type=password] input[type=number], input[type=email] {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    border-radius: 0;
+    border: 2px solid transparent;
+    outline: none;
+    resize: none;
+  }
+  
+  a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  ol, ul {
+    list-style: none;
+    text-decoration: none;
+  }
+
+
+  /*variables*/
+  :root {
+    --textPrimary: #FFFFFF;
+    --textSecondary: #c5f82a;
+    --backgroundPrimary: #141414;
+    --backgroundSecondary: #1f1f1f;
+    --backgroundButton: #333333;
+
+    --fontInter: "Inter", "Arial", sans-serif;
+  }
+
+  body {
+    background-color: var(--backgroundPrimary);
+    color: var(--textPrimary);
+    font-family: var(--fontInter);
+  }
+
+  .container {
+    background-color: var(--backgroundSecondary);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding: 50px 25px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  img {
+    border-radius: 50%;
+    display:block;
+    width: 100%;
+  }
+
+  .img {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+
+
+h1 {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-name span {
+font-weight: 600;
+font-size: 0.85em;
+color: var(--textSecondary);
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+.button {
+    background-color: var(--backgroundButton);
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 100%;
+   padding: 15px 20px;
+   font-size: 0.8em;
+   font-weight: 600;
+}
+
+.button a  {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.card-buttons {
+    width: 100%;
+}
